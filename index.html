@@ -333,6 +333,32 @@ Promise.all([MODELS,PIECES].map(u=>{const i=new Image;i.src=u;return i.decode().
 });
 
 size();requestAnimationFrame(loop);
+@media (max-width: 820px) {
+html, body {
+height: auto !important;
+min-height: 100% !important;
+overflow-x: hidden !important;
+overflow-y: auto !important;
+}
+
+body {
+-webkit-overflow-scrolling: touch;
+}
+
+.page {
+height: auto !important;
+min-height: 100svh;
+}
+
+main {
+min-height: auto !important;
+}
+
+.stage {
+touch-action: pan-y !important;
+}
+}
+
 </script>
 </body>
 </html>
